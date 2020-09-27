@@ -25,14 +25,14 @@ public class TreeConfiguration {
 		Node<Character> h = new Node<>('H');
 		Node<Character> x = new Node<>('X');
 
-		a.setLeftChild(b);
-		a.setRightChild(c);
-		b.setLeftChild(d);
-		b.setRightChild(e);
-		c.setLeftChild(f);
-		c.setRightChild(g);
-		d.setLeftChild(h);
-		d.setRightChild(x);
+		a.setLeft(b);
+		a.setRight(c);
+		b.setLeft(d);
+		b.setRight(e);
+		c.setLeft(f);
+		c.setRight(g);
+		d.setLeft(h);
+		d.setRight(x);
 
 		return a;
 

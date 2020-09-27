@@ -1,4 +1,4 @@
-package com.example.demo.algorithms;
+package com.example.demo.treeTraversalAlgorithms;
 
 import com.example.demo.binaryTree.Node;
 
@@ -18,8 +18,8 @@ public class PostOrderTraversal {
 			return orderedNodes;
 		}
 
-		postOrderAux(node.getLeftChild(), orderedNodes);
-		postOrderAux(node.getRightChild(), orderedNodes);
+		postOrderAux(node.getLeft(), orderedNodes);
+		postOrderAux(node.getRight(), orderedNodes);
 		orderedNodes.add(node.getData());
 		return orderedNodes;
 	}

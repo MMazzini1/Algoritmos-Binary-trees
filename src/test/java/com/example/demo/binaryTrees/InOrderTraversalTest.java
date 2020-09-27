@@ -1,6 +1,6 @@
 package com.example.demo.binaryTrees;
 
-import com.example.demo.algorithms.InOrderTraversal;
+import com.example.demo.treeTraversalAlgorithms.InOrderTraversal;
 import com.example.demo.binaryTree.Node;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

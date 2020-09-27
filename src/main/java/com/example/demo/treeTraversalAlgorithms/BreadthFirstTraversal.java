@@ -1,4 +1,4 @@
-package com.example.demo.algorithms;
+package com.example.demo.treeTraversalAlgorithms;
 
 import com.example.demo.binaryTree.Node;
 
@@ -24,8 +24,8 @@ public class BreadthFirstTraversal {
 		while (!queue.isEmpty()) {
 			Node<T> node = queue.remove();
 			orderedNodes.add(node.getData());
-			Node<T> leftChild = node.getLeftChild();
-			Node<T> rightChild = node.getRightChild();
+			Node<T> leftChild = node.getLeft();
+			Node<T> rightChild = node.getRight();
 
 			if (leftChild != null) {
 				queue.add(leftChild);

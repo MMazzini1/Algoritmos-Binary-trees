@@ -1,4 +1,4 @@
-package com.example.demo.algorithms;
+package com.example.demo.treeTraversalAlgorithms;
 
 import com.example.demo.binaryTree.Node;
 
@@ -20,8 +20,8 @@ public class PreOrderTraversal {
 		}
 
 		orderedNodes.add(node.getData());
-		preOrderAux(node.getLeftChild(), orderedNodes);
-		preOrderAux(node.getRightChild(), orderedNodes);
+		preOrderAux(node.getLeft(), orderedNodes);
+		preOrderAux(node.getRight(), orderedNodes);
 		return orderedNodes;
 	}
 

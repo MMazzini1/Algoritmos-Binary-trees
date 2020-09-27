@@ -1,13 +1,8 @@
 package com.example.demo.binaryTrees;
 
-import com.example.demo.algorithms.BreadthFirstTraversal;
-import com.example.demo.algorithms.InOrderTraversal;
-import com.example.demo.algorithms.PreOrderTraversal;
+import com.example.demo.treeTraversalAlgorithms.BreadthFirstTraversal;
 import com.example.demo.binarySearchTree.BinarySearchTree;
-import com.example.demo.binaryTree.Node;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 

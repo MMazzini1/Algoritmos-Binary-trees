@@ -33,9 +33,9 @@ public class BinarySearchTree<T extends Comparable> {
 		}
 
 		if (data.compareTo(root.getData()) < 0)
-			root.setLeftChild(insertAux(root.getLeftChild(), data));
+			root.setLeft(insertAux(root.getLeft(), data));
 		else if (data.compareTo(root.getData()) > 0) {
-			root.setRightChild(insertAux(root.getRightChild(), data));
+			root.setRight(insertAux(root.getRight(), data));
 		}
 		//else, no se admiten duplicados en un BST, x definición.
 
@@ -58,9 +58,9 @@ public class BinarySearchTree<T extends Comparable> {
 		}
 
 		if (data.compareTo(head.getData()) < 0 ) {
-			return searchAux(head.getLeftChild(), data);
+			return searchAux(head.getLeft(), data);
 		} else {
-			return searchAux(head.getRightChild(), data);
+			return searchAux(head.getRight(), data);
 		}
 	}
 

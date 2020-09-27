@@ -1,4 +1,4 @@
-package com.example.demo.algorithms;
+package com.example.demo.treeTraversalAlgorithms;
 
 import com.example.demo.binaryTree.Node;
 
@@ -19,9 +19,9 @@ public class InOrderTraversal {
 			return orderedNodes;
 		}
 
-		inOrderAux(node.getLeftChild(), orderedNodes);
+		inOrderAux(node.getLeft(), orderedNodes);
 		orderedNodes.add(node.getData());
-		inOrderAux(node.getRightChild(), orderedNodes);
+		inOrderAux(node.getRight(), orderedNodes);
 		return orderedNodes;
 	}
 
