@@ -1,9 +1,12 @@
 package com.example.demo.binaryTrees;
 
+import com.example.demo.binarySearchTree.BinarySearchTree;
 import com.example.demo.binaryTree.Node;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
+
+import java.util.Arrays;
+import java.util.List;
 
 @TestConfiguration
 public class TreeConfiguration {
@@ -33,7 +36,14 @@ public class TreeConfiguration {
 
 		return a;
 
+	}
 
+
+	@Bean(name="binaryTree1")
+	public BinarySearchTree<Integer> getBinaryTree1(){
+
+		List<Integer> list = Arrays.asList(25, 15, 50, 10, 22, 35, 70, 4, 12, 18, 24, 31, 44, 66, 90);
+		return new BinarySearchTree<Integer>(list);
 
 	}
 
